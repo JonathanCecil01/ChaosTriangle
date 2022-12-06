@@ -28,7 +28,7 @@ def midpoint(p1, p2):
 
 def construct(triangle, point):
     ls = [triangle.A, triangle.B, triangle.C]
-    for i in range(0, 10000):
+    for i in range(0, 100):
         j = random.randint(0, 2)
         np = midpoint(ls[j],point)
         plt.plot(np[0], np[1], marker = 'o', color = 'black', markersize = 0.3)
